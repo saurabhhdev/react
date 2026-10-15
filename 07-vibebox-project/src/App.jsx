@@ -157,21 +157,21 @@ const App = () => {
 
           <a
             href="#discover"
-            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] transition-colors hover:bg-white/[0.04] hover:text-white"
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] transition-colors hover:bg-white/4 hover:text-white"
           >
             <span>⌕</span> Discover
           </a>
 
           <a
             href="#favorites"
-            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] transition-colors hover:bg-white/[0.04] hover:text-white"
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] transition-colors hover:bg-white/4 hover:text-white"
           >
             <span>♡</span> Favourites
           </a>
 
           <a
             href="#playlists"
-            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] transition-colors hover:bg-white/[0.04] hover:text-white"
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] transition-colors hover:bg-white/4 hover:text-white"
           >
             <span>♫</span> Playlists
           </a>
@@ -192,7 +192,7 @@ const App = () => {
             <a
               key={playlist.id}
               href={`#playlist-${playlist.id}`}
-              className="block truncate rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] hover:bg-white/[0.04] hover:text-white"
+              className="block truncate rounded-lg px-3 py-2.5 text-sm text-[#A4A9A8] hover:bg-white/4 hover:text-white"
             >
               {playlist.name}
             </a>
@@ -241,7 +241,7 @@ const App = () => {
                 .getElementById("favorites")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="ml-4 hidden rounded-lg border border-[#303436] px-4 py-2.5 text-sm text-[#D3D5D1] transition-colors hover:bg-white/[0.05] sm:block"
+            className="ml-4 hidden rounded-lg border border-[#303436] px-4 py-2.5 text-sm text-[#D3D5D1] transition-colors hover:bg-white/5 sm:block"
           >
             ♡ {favorites.length} favourites
           </button>
@@ -249,7 +249,7 @@ const App = () => {
 
         <div
           id="home"
-          className="mx-auto max-w-[1440px] px-5 pt-8 sm:px-8 lg:px-10"
+          className="mx-auto max-w-360 px-5 pt-8 sm:px-8 lg:px-10"
         >
 
           {/* Page Heading */}
@@ -453,7 +453,7 @@ const App = () => {
                                 )
                               }
                               aria-label={`Remove ${song.title} from ${playlist.name}`}
-                              className="shrink-0 rounded-md px-2 py-1 text-xs text-[#929897] hover:bg-white/[0.05] hover:text-white"
+                              className="shrink-0 rounded-md px-2 py-1 text-xs text-[#929897] hover:bg-white/5 hover:text-white"
                             >
                               Remove
                             </button>
