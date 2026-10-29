@@ -15,7 +15,7 @@
 
 ---
 
-## 📌 Repository Overview
+# 📌 Repository Overview
 
 This repository documents a step-by-step curriculum for mastering **React.js**. Each module contains an independent, fully functioning Vite project — progressing from fundamental JSX rendering and prop hierarchies to complex multi-state applications such as **VibeBox** and the **Notes App**.
 
